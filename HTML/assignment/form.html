@@ -4,36 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        label{
+            font-size: 20px;
+            color: rgb(30, 234, 241);
+        }
+        input{
+            padding: 3px;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        <label for="feedback">Feedback type</label>
-        <select name="types" id="feedback">
-            <option value="worst">😑</option>
-            <option value="good">🙂</option>
-            <option value="better">😁</option>
-            <option value="Amazing">😍</option>
-        </select>
-        <p></p>
-        <br>
-        <textarea name="" id="" placeholder="type your message"></textarea>
-        <p></p>
-        <br>
-        <label for="">Website Rating</label>
-        <br>
-        <label for="notGood">1</label> <input id="notGood" type="radio" name="rating">
-        <label for="good">2</label> <input id="good" type="radio" name="rating">
-        <label for="better">3</label> <input id="better" type="radio" name="rating">
-        <label for="best">4</label> <input id="best" type="radio" name="rating">
-        <label for="awesome">5</label> <input id="awesome" type="radio" name="rating">
-        <p></p>
-        <br>
-        <label for="">Age:</label>
-        <input type="number" min="10" max="100">
-        <p></p>
-        <br>
-        <label for="">Email:</label>
-        <input type="email" required>
-    </form>
+    <div style="background-color: rgb(72, 7, 151); border: 5px solid rgb(255, 0, 89); margin: 5%; padding: 10px;">
+        
+        <form action="submit" style="text-align: center;">
+            <label for="feedback">Feedback type:</label>
+            <select name="types" id="feedback">
+                <option value="worst">😑</option>
+                <option value="good">🙂</option>
+                <option value="better">😁</option>
+                <option value="Amazing">😍</option>
+            </select>
+            <p></p>
+            <br>
+            <textarea name="" id="" placeholder="type your message"></textarea>
+            <p></p>
+            <br>
+            <label for="">Website Rating:</label>
+            <label for="notGood">1</label> <input id="notGood" type="radio" name="rating">
+            <label for="good">2</label> <input id="good" type="radio" name="rating">
+            <label for="better">3</label> <input id="better" type="radio" name="rating">
+            <label for="best">4</label> <input id="best" type="radio" name="rating">
+            <label for="awesome">5</label> <input id="awesome" type="radio" name="rating">
+            <p></p>
+            <br>
+            <label for="">Age:</label>
+            <input type="number" min="10" max="100">
+            <p></p>
+            <br>
+            <label for="">Email:</label>
+            <input type="email" required>
+            <p></p>
+            <br>
+            <label for="">Password:</label>
+            <input type="password" min="8">
+            <p></p>
+            <br>
+            <label for="">Paste URL here:</label>
+            <input type="url">
+            <p></p>
+            <br>
+            <input type="checkbox"> <label for="">Terms and conditions</label>
+            <p></p>
+            <br>
+            <button type="submit" style="color: rgb(0, 62, 13); background-color: rgb(28, 167, 0); font-size: 20px; border-radius: 20%; border: 3px solid rgb(0, 185, 151);">Submit</button>
+        </form>
+    
+    </div>
 </body>
 </html>
