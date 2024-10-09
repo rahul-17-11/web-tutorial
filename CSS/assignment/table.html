@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: green;
+        }
+        td, th{
+            border: 1px solid rgb(190, 190, 190);
+            margin: 0px;
+            padding: 4px;
+        }
+        #sum{
+            background-color: rgb(185, 185, 185);
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Styling</h1>
+    <table border="3">
+        <thead><tr><th>Product Name</th><th>Quantity</th><th>Price per Unit</th><th>Description</th><th>Total Price</th></tr></thead>
+        <tr><td>Wireless Mouse</td><td>10</td><td>$15.99</td><td>Ergonomic wireless mouse</td><td>$159.90</td></tr>
+        <td>Bluetooth Speaker</td><td>5</td><td>$49.99</td><td>Portable Bluetooth speaker</td><td>$249.95</td></tr>
+        <tr><td>USB-C Cable</td><td>20</td><td>$8.50</td><td>1m USB-C to USB-A cable</td><td>$170.00</td></tr>
+        <tr><td>Laptop Stand</td><td>7</td><td>$35.00</td><td>Adjustable aluminum laptop stand</td><td>$245.00</td></tr>
+        <tr id="sum"><td colspan="4">sum</td><td>$824.85</td></tr>
+    </table>
+</body>
+</html>
